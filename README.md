@@ -3,7 +3,7 @@
 If you have just made a new repo using this template, here are some things you might need to know:
 
 - Fill in the readme with accurate instructions for your project.
-- If applicable, add your used dependencies to the [Requirements](./requirements.txt) file.
+- If applicable, add your dependencies to the appropriate file.
 - Pick a license. [LICENSE](./LICENSE) currently has a placeholder with a few suggestions.
 - [Release Workflow](./.github/workflows/release.yml)
     - You should adjust the `APP_FILES` variable in the workflow to include files you want in the release.
@@ -52,8 +52,8 @@ Short description of what this project does and who it's for.
 3. Install dependencies...
 
 ### Running tests
-```bash
-add test command here
+```
+# add test command here
 ```
 
 ### Releasing
