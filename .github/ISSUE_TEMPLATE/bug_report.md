@@ -22,7 +22,7 @@ What actually happened.
 
 **Environment**
 - OS: [e.g. Windows 11]
-- Python version: [e.g. 3.12]
+- Language/runtime version: [e.g. Python 3.12]
 - App version: [e.g. v1.2.0]
 
 **Additional context**
