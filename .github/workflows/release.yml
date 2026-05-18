@@ -10,7 +10,7 @@ permissions:
 
 env:
   ZIP_NAME: ${{ github.event.repository.name }}-${{ github.ref_name }}.zip
-  APP_FILES: "app.py requirements.txt README.md LICENSE"  # adjust per project
+  APP_FILES: ""  # space-separated list of files/dirs to include in the release
 
 jobs:
   release:
@@ -18,16 +18,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: Set up environment
+        run: |
+          # add your environment setup here
 
       - name: Run tests
-        run: pytest
+        run: |
+          # add your test command here
 
       - name: Package application
         run: |

@@ -3,11 +3,11 @@
 If you have just made a new repo using this template, here are some things you might need to know:
 
 - Fill in the readme with accurate instructions for your project.
-- Add your used pip-packages to the [Requirements](./requirements.txt) file
+- If applicable, add your used dependencies to the [Requirements](./requirements.txt) file.
 - Pick a license. [LICENSE](./LICENSE) currently has a placeholder with a few suggestions.
 - [Release Workflow](./.github/workflows/release.yml)
     - You should adjust the `APP_FILES` variable in the workflow to include files you want in the release.
-    - Adjust the Python version in the release workflow if your project requires a different version.
+    - Add any language-specific build/test steps.
 - [CI Workflow](./.github/workflows/ci.yml)
     - Adjust the CI (continuous integration) workflow if needed.
 - Review [.gitignore](./.gitignore) and add any project-specific patterns.
@@ -33,13 +33,13 @@ Short description of what this project does and who it's for.
 ## For users
 
 ### Requirements
-- Python 3.12+
+- ...
 
 ### Installation
 1. Download the latest release from the [Releases page](../../releases)
 2. Unzip and navigate to the folder
-3. Install dependencies: `pip install -r requirements.txt`
-4. Run: `python app.py`
+3. Install dependencies: ...
+4. Run: ...
 
 ---
 
@@ -48,27 +48,12 @@ Short description of what this project does and who it's for.
 ### Setup
 
 1. Clone the repo and navigate into it
-2. Set up the virtual environment...
-    ```bash
-    python -m venv .venv
-    ```
+2. Set up...
+3. Install dependencies...
 
-    ...and activate it:  
-    Windows:
-    ```pwsh
-    .venv\Scripts\activate
-    ```
-    Linux / Mac:
-    ```bash
-    source .venv/bin/activate
-    ```
-3. Install dependencies
-    ```bash
-    pip install -r requirements.txt
-    ```
 ### Running tests
 ```bash
-pytest
+add test command here
 ```
 
 ### Releasing
