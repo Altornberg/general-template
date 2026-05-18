@@ -2,7 +2,7 @@
 
 If you have just made a new repo using this template, here are some things you might need to know:
 
-- Fill in the readme with accurate instructions for your project.
+- Fill in the README with accurate instructions for your project.
 - If applicable, add your dependencies to the appropriate file.
 - Pick a license. [LICENSE](./LICENSE) currently has a placeholder with a few suggestions.
 - [Release Workflow](./.github/workflows/release.yml)
@@ -14,6 +14,8 @@ If you have just made a new repo using this template, here are some things you m
 - The issue templates and PR template in .github/ can be customized, added to, or removed as needed.
 - Set up branch protection for `main` in Settings → Branches (require PR + CI to pass before merging, restrict force pushes and deletions).
 - Enable auto-delete of head branches in Settings → General (keeps the repo clean after merges).
+- To add a CI status badge to your README, find the embed code under Actions → select the workflow → "..." menu → "Create status badge". Paste it at the top of the README.
+
 
 ### Optional GitHub features worth looking into
 These are not required but may be useful depending on your project:
