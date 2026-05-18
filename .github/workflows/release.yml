@@ -1,0 +1,41 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+env:
+  ZIP_NAME: ${{ github.event.repository.name }}-${{ github.ref_name }}.zip
+  APP_FILES: "app.py requirements.txt README.md LICENSE"  # adjust per project
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: pytest
+
+      - name: Package application
+        run: |
+          mkdir artifact
+          cp -r $APP_FILES artifact/
+          zip -r "$ZIP_NAME" artifact/
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ env.ZIP_NAME }}

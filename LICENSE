@@ -1,0 +1,24 @@
+PLACEHOLDER — Choose a license before publishing this project.
+
+Common options:
+
+MIT License
+  Simple and permissive. Others can use, copy, modify, and distribute
+  your code freely, even in proprietary software. Just requires keeping
+  your copyright notice. Good default for most open source projects.
+
+Apache License 2.0
+  Like MIT but also includes an explicit patent grant, protecting users
+  from patent claims. Better for larger or more corporate projects.
+
+GNU General Public License v3 (GPL-3.0)
+  Copyleft license. Anyone who distributes your code or a modified
+  version must also release their source under the GPL. Use this if
+  you want to ensure derivatives stay open source.
+
+Proprietary / All rights reserved
+  No one may use, copy, or distribute your code without explicit
+  permission. Use this for private or commercial projects.
+
+Replace this file with the full license text of your chosen license.
+See https://choosealicense.com for help deciding.
