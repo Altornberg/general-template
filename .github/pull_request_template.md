@@ -3,7 +3,6 @@ _What does this PR do and why?_
 
 ## Changes
 - 
-- 
 
 ## Type of change
 - [ ] Bug fix
